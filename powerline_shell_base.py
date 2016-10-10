@@ -23,7 +23,7 @@ class Powerline:
         'compatible': {
             'lock': 'RO',
             'network': 'SSH',
-            'separator': u'\u25B6',
+            'separator': u'\u2605',
             'separator_thin': u'\u276F'
         },
         'patched': {
@@ -98,12 +98,12 @@ class Powerline:
 
 class RepoStats:
     symbols = {
-        'detached': u'\u2693',
-        'ahead': u'\u2B06',
-        'behind': u'\u2B07',
+        'detached': u'\uE005',
+        'ahead': u'\uE007',
+        'behind': u'\uE004',
         'staged': u'\u2714',
         'not_staged': u'\u270E',
-        'untracked': u'\u2753',
+        'untracked': u'\uE003',
         'conflicted': u'\u273C'
     }
 
