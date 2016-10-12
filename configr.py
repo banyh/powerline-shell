@@ -8,49 +8,49 @@
 
 SEGMENTS = [
 # Set the terminal window title to user@host:dir
-    'set_term_title',
+#    'set_term_title',
 
 # Show current virtual environment (see http://www.virtualenv.org/)
-#    'virtual_env',
+    'virtual_env',
 
 # Show the current user's username as in ordinary prompts
-#    'username',
+    'username',
 
 # Show the machine's hostname. Mostly used when ssh-ing into other machines
-#    'hostname',
+    'hostname',
 
 # Show a padlock when ssh-ing from another machine
-#    'ssh',
+    'ssh',
 
 # Show the current directory. If the path is too long, the middle part is
 # replaced with ellipsis ('...')
-    'cwd',
+#    'cwd',
 
 # Show a padlock if the current user has no write access to the current
 # directory
-    'read_only',
+#    'read_only',
 
 # Show the current git branch and status
-    'git',
+#    'git',
 
 # Show the current mercurial branch and status
-    'hg',
+#    'hg',
 
 # Show the current svn branch and status
-    'svn',
+#    'svn',
 
 # Show the current fossil branch and status
-    'fossil',
+#    'fossil',
 
 # Show number of running jobs
-#    'jobs',
+    'jobs',
 
 # Show the last command's exit code if it was non-zero
 #    'exit_code',
 
 # Shows a '#' if the current user is root, '$' otherwise
 # Also, changes color if the last command exited with a non-zero error code
-    'root',
+#    'root',
 ]
 
 # Change the colors used to draw individual segments in your prompt
