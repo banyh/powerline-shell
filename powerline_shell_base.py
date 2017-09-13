@@ -27,7 +27,7 @@ class Powerline:
             'separator_thin': u'\u276F'
         },
         'patched': {
-            'lock': u'\uE011',
+            'lock': u'\uE0A2',
             'network': u'\uE013',
             'separator': u'\uE0B0',
             'separator_thin': u'\uE0B1'
@@ -102,8 +102,8 @@ class RepoStats:
         'ahead': u'\uE021',
         'behind': u'\uE020',
         'staged': u'\uE01F',
-        'not_staged': u'\uE00B',
-        'untracked': u'\uE012',
+        'not_staged': u'\uE012',
+        'untracked': u'\uE006',
         'conflicted': u'\uE00E'
     }
 
