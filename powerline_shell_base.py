@@ -27,8 +27,8 @@ class Powerline:
             'separator_thin': u'\u276F'
         },
         'patched': {
-            'lock': u'\uE0A2',
-            'network': u'\uE0A2',
+            'lock': u'\uE011',
+            'network': u'\uE013',
             'separator': u'\uE0B0',
             'separator_thin': u'\uE0B1'
         },
@@ -98,13 +98,13 @@ class Powerline:
 
 class RepoStats:
     symbols = {
-        'detached': u'\uE005',
-        'ahead': u'\uE007',
-        'behind': u'\uE004',
-        'staged': u'\u2714',
-        'not_staged': u'\u270E',
-        'untracked': u'\uE003',
-        'conflicted': u'\u273C'
+        'detached': u'\uE022',
+        'ahead': u'\uE021',
+        'behind': u'\uE020',
+        'staged': u'\uE01F',
+        'not_staged': u'\uE00B',
+        'untracked': u'\uE012',
+        'conflicted': u'\uE00E'
     }
 
     def __init__(self):
