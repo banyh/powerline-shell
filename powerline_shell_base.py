@@ -71,13 +71,15 @@ class Powerline:
         return self.color('48', code)
 
     def append(self, content, fg, bg, separator=None, separator_fg=None):
+        if not isinstance(content, unicode):
+            content = content.decode('utf8')
         self.segments.append((content, fg, bg,
             separator if separator is not None else self.separator,
             separator_fg if separator_fg is not None else bg))
 
     def draw(self):
-        text = (''.join(self.draw_segment(i) for i in range(len(self.segments)))
-                + self.reset) + ' '
+        text = (u''.join(self.draw_segment(i) for i in range(len(self.segments)))
+                + self.reset) + u' '
         if py3:
             return text
         else:
@@ -87,7 +89,7 @@ class Powerline:
         segment = self.segments[idx]
         next_segment = self.segments[idx + 1] if idx < len(self.segments)-1 else None
 
-        return ''.join((
+        return u''.join((
             self.fgcolor(segment[1]),
             self.bgcolor(segment[2]),
             segment[0],
