@@ -1,10 +1,13 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 from __future__ import print_function
-from six import text_type
 import argparse
 import os
 import sys
+try:
+    text_type = unicode
+except:
+    text_type = str
 
 py3 = sys.version_info.major == 3
 
