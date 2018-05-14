@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 from __future__ import print_function
-
+from six import text_type
 import argparse
 import os
 import sys
@@ -71,7 +71,7 @@ class Powerline:
         return self.color('48', code)
 
     def append(self, content, fg, bg, separator=None, separator_fg=None):
-        if not isinstance(content, unicode):
+        if not isinstance(content, text_type):
             content = content.decode('utf8')
         self.segments.append((content, fg, bg,
             separator if separator is not None else self.separator,
